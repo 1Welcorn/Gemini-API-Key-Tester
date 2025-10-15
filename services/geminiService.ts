@@ -1,10 +1,9 @@
 import { GoogleGenAI } from "@google/genai";
 
-export const runPrompt = async (prompt: string): Promise<string> => {
-  const apiKey = process.env.API_KEY;
+export const runPrompt = async (prompt: string, apiKey: string): Promise<string> => {
   if (!apiKey) {
     throw new Error(
-      'Configuration Error: A Google Gemini API key is required, but it has not been configured.\n\nPlease go to your deployment settings (e.g., on Vercel, Netlify, or your hosting provider) and add an environment variable named API_KEY with your key as the value.'
+      'API Key is missing. Please enter your Google Gemini API key in the input field.'
     );
   }
   
@@ -19,7 +18,7 @@ export const runPrompt = async (prompt: string): Promise<string> => {
   } catch (e) {
     if (e instanceof Error) {
       if (e.message.includes('API key not valid')) {
-        throw new Error('Authentication Failed: The API key provided in the environment is not valid. Please ensure it is correct and has the necessary permissions.');
+        throw new Error('Authentication Failed: The API key provided is not valid. Please ensure it is correct and has the necessary permissions.');
       }
       if (e.message.toLowerCase().includes('fetch')) {
         throw new Error('Network Error: A network problem occurred. Please check your internet connection and any firewall settings.');
