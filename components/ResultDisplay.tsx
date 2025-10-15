@@ -1,5 +1,6 @@
+
 import React from 'react';
-import type { ApiResult } from '../types';
+import { ApiResult } from '../types';
 import { TestStatus } from '../types';
 import { CheckIcon } from './icons/CheckIcon';
 import { AlertIcon } from './icons/AlertIcon';
@@ -9,7 +10,7 @@ interface ResultDisplayProps {
   result: ApiResult;
 }
 
-const ResultDisplay: React.FC<ResultDisplayProps> = ({ result }) => {
+const ResultDisplay = ({ result }: ResultDisplayProps) => {
   switch (result.status) {
     case TestStatus.LOADING:
       return (

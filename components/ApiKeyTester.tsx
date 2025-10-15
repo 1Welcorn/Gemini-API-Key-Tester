@@ -1,12 +1,13 @@
+
 import React, { useState, useCallback } from 'react';
 import { runPrompt } from '../services/geminiService';
-import type { ApiResult } from '../types';
+import { ApiResult } from '../types';
 import { TestStatus } from '../types';
 import Header from './Header';
 import PromptInput from './PromptInput';
 import ResultDisplay from './ResultDisplay';
 
-const ApiKeyTester: React.FC = () => {
+const ApiKeyTester = () => {
   const [prompt, setPrompt] = useState<string>('Why is the sky blue? Answer in one sentence.');
   const [result, setResult] = useState<ApiResult>({ status: TestStatus.IDLE, message: null });
 

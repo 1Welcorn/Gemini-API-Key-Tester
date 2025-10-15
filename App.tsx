@@ -2,7 +2,7 @@
 import React from 'react';
 import ApiKeyTester from './components/ApiKeyTester';
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <main className="relative min-h-screen w-full bg-slate-900 text-white flex items-center justify-center p-4 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/50 via-slate-900 to-slate-900 z-0"></div>

@@ -2,7 +2,7 @@
 import React from 'react';
 import { SparklesIcon } from './icons/SparklesIcon';
 
-const Header: React.FC = () => (
+const Header = () => (
   <div className="flex flex-col items-center">
     <div className="flex items-center space-x-3">
       <SparklesIcon className="w-8 h-8 text-indigo-400" />

@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { EyeIcon } from './icons/EyeIcon';
 import { EyeOffIcon } from './icons/EyeOffIcon';
@@ -8,7 +9,7 @@ interface ApiKeyInputProps {
   isLoading: boolean;
 }
 
-const ApiKeyInput: React.FC<ApiKeyInputProps> = ({ apiKey, setApiKey, isLoading }) => {
+const ApiKeyInput = ({ apiKey, setApiKey, isLoading }: ApiKeyInputProps) => {
   const [showKey, setShowKey] = useState(false);
 
   return (
