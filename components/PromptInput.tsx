@@ -45,7 +45,7 @@ const PromptInput: React.FC<PromptInputProps> = ({ prompt, setPrompt, onSubmit, 
             Testing...
           </>
         ) : (
-          'Test API Key'
+          'Test Prompt'
         )}
       </button>
        <p className="text-center text-xs text-slate-500">

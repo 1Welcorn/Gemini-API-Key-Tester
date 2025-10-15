@@ -1,5 +1,5 @@
 {
-  "name": "gemini-api-key-tester",
+  "name": "gemini-prompt-tester",
   "private": true,
   "version": "0.0.0",
   "type": "module",

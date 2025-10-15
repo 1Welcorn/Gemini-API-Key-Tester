@@ -1,5 +1,5 @@
 {
-  "name": "Gemini API Key Tester",
-  "description": "A simple and elegant web application to test if a Gemini API key is configured correctly by sending a test prompt to the Gemini API.",
+  "name": "Gemini Prompt Tester",
+  "description": "A simple and elegant web application to test the Gemini API with a sample prompt.",
   "requestFramePermissions": []
 }

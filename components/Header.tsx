@@ -7,7 +7,7 @@ const Header: React.FC = () => (
     <div className="flex items-center space-x-3">
       <SparklesIcon className="w-8 h-8 text-indigo-400" />
       <h1 className="text-3xl font-bold tracking-tight text-slate-100">
-        Gemini API Key Tester
+        Gemini Prompt Tester
       </h1>
     </div>
   </div>

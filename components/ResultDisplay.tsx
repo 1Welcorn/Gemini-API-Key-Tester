@@ -1,4 +1,3 @@
-
 import React from 'react';
 import type { ApiResult } from '../types';
 import { TestStatus } from '../types';
@@ -26,7 +25,7 @@ const ResultDisplay: React.FC<ResultDisplayProps> = ({ result }) => {
             <CheckIcon className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5" />
             <div>
               <h3 className="text-lg font-semibold text-green-300">Success!</h3>
-              <p className="mt-1 text-sm text-green-200/90">API key is valid. Received response:</p>
+              <p className="mt-1 text-sm text-green-200/90">Received response from Gemini API:</p>
               <p className="mt-2 text-sm text-slate-200 bg-slate-900/50 p-3 rounded-md border border-slate-700 font-mono whitespace-pre-wrap">{result.message}</p>
             </div>
           </div>
@@ -39,7 +38,7 @@ const ResultDisplay: React.FC<ResultDisplayProps> = ({ result }) => {
             <AlertIcon className="w-6 h-6 text-red-400 flex-shrink-0 mt-0.5" />
             <div>
               <h3 className="text-lg font-semibold text-red-300">Error</h3>
-              <p className="mt-2 text-sm text-red-200/90 font-mono">{result.message}</p>
+              <p className="mt-2 text-sm text-red-200/90 whitespace-pre-wrap">{result.message}</p>
             </div>
           </div>
         </div>
